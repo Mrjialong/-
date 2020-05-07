@@ -1,6 +1,6 @@
 public class 两个链表的共同节点 {
     public ListNode FindFirstCommonNode(ListNode pHead1, ListNode pHead2) {
-        if (pHead1 == null && pHead2 == null){
+        if (pHead1 == null || pHead2 == null){
             return null;
         }
         int listLingth1 = 0;
@@ -39,6 +39,7 @@ public class 两个链表的共同节点 {
         } else {
             return null;
         }
+
     }
 
     public static class ListNode {
