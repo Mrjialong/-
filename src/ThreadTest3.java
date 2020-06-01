@@ -1,5 +1,6 @@
 import java.util.concurrent.Callable;
 import java.util.concurrent.ExecutionException;
+import java.util.concurrent.Executors;
 import java.util.concurrent.FutureTask;
 
 public class ThreadTest3 {
@@ -20,5 +21,6 @@ public class ThreadTest3 {
         } catch (ExecutionException e) {
             e.printStackTrace();
         }
+        Executors.newCachedThreadPool();
     }
 }
